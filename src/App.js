@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Nav from './components/Nav';
 import About from './components/About';
 import Applications from './components/Applications';
 import ContactForm from './components/Contact';
