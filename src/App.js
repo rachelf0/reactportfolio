@@ -1,8 +1,16 @@
+import React, { useState } from 'react';
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  const [categories] = useState([
+    {name: 'front', description: 'Exclusively Front End Projects'},
+    { name: 'back', description: 'Exclusively Back End Projects'},
+    { name: 'full', description: 'Front and Back End Projects'}
+  ]);
+
+  const [currentCategory, setCurrentCategory] = useState(categories[0]);
+  
   return (
     <div className="App">
       <header className="App-header">
