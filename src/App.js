@@ -1,5 +1,10 @@
 import React, { useState } from 'react';
-import React from 'react';
+import About from './components/About';
+import Applications from './components/Applications';
+import ContactForm from './components/Contact';
+import Resume from './components/Resume';
+import Footer from './components/Footer';
+
 // import './App.css';
 
 function App() {
@@ -10,23 +15,42 @@ function App() {
   ]);
 
   const [currentCategory, setCurrentCategory] = useState(categories[0]);
+  const [currentPage, handlePageChange] = useState('About');
+
+  const renderPage = () => {
+    switch (currentPage) {
+      case 'About':
+        return <About />;
+      case 'Contact':
+        return <ContactForm />;
+      case 'Front':
+        return <Applications currentCategory={categories[0]}></Applications>
+      case 'Back':
+        return <Applications currentCategory={categories[1]}></Applications>
+      case 'Full':
+        return <Applications currentCategory={categories[2]}></Applications>
+      case 'Resume':
+        return <Resume />;
+      default:
+        return <About />;
+    }
+  };
   
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="page-container">
+      <Nav
+        categories={categories}
+        currentCategory={currentCategory}
+        setCurrentCategory={setCurrentCategory}
+        currentPage={currentPage} 
+        handlePageChange={handlePageChange} 
+      ></Nav>
+      <main>
+
+        <div>{renderPage(currentPage)}</div>
+
+      </main>
+      <Footer />
     </div>
   );
 }
