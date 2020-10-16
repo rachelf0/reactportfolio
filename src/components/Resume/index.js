@@ -4,9 +4,7 @@ function Resume() {
 
     return (
         <section id="resume">
-            <a href="https://docs.google.com/document/d/1019J-jNZGOaDDVJYdEWB0UTNVQV0PYF0o-YEMQ7HPmg/edit?usp=sharing" download>
-                Click here to download a copy of my resume.
-            </a>
+            Download my full <a href="https://github.com/rachelf0/reactportfolio/raw/master/src/assets/RachelFritzResume.pdf" class="link">resume</a>
         </section>
     );
 

@@ -3,6 +3,8 @@ import Modal from '../Modal';
 
 const ApplicationList = ({ category }) => {
 
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   const [applications] = useState([
     {
       name: 'Run Buddy',
@@ -114,7 +116,7 @@ const ApplicationList = ({ category }) => {
 
   const currentApplications = applications.filter((application) => application.category === category);
   const [currentApplication, setCurrentApplication] = useState();
-  const [isModalOpen, setIsModalOpen] = useState(false);
+
 
   const toggleModal = (image, i) => {
     setCurrentApplication({ ...image, index: i });
