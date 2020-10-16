@@ -7,7 +7,6 @@ function About() {
         <section className="about">
             <div>
                 <h1 id="about">About me</h1>
-                {/*<img src={coverImage} className="my-2" style={{ width: "100%" }} alt="cover" />*/}
                 <img className="profile-picture" src={profilePicture} alt="Rachel Fritz" />
             </div>
             <div className="bio">

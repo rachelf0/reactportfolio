@@ -10,8 +10,8 @@ import Footer from './components/Footer';
 
 function App() {
   const [categories] = useState([
-    {name: 'front', description: 'Exclusively Front End Projects'},
-    { name: 'back', description: 'Exclusively Back End Projects'},
+    {name: 'front', description: 'Front End Projects'},
+    { name: 'back', description: 'Back End Projects'},
     { name: 'full', description: 'Front and Back End Projects'}
   ]);
 
