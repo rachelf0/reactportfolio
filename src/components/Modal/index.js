@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Modal = ({ onClose, currentApplication }) => {
-    const { name, category, description, gitHub, site, index } = currentApplication;
+    const { name, category, description, GitHub, site, index } = currentApplication;
 
     return (
         <div className="modalBackdrop">
@@ -9,7 +9,7 @@ const Modal = ({ onClose, currentApplication }) => {
                 <h3 className="modalTitle">{name}</h3>
                 <img src={require(`../../assets/img/large/${category}/${index}.jpg`)} alt="current category" />
                 <p>{description}</p>
-                <p><a href={gitHub} target="_blank" rel="noopener noreferrer">Repository</a></p>
+                <p><a href={GitHub} target="_blank" rel="noopener noreferrer">Repository</a></p>
                 {(site !== 'NA') ? (
                     <p><a href={site} target="_blank" rel="noopener noreferrer">Deployed Site</a></p>):(
                         <p></p>
