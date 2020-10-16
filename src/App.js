@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Nav from './components/Nav';
 import About from './components/About';
-import Projects from './components/Projects';
+import Applications from './components/Applications';
 import ContactForm from './components/Contact';
 import Resume from './components/Resume';
 import Footer from './components/Footer';
@@ -25,11 +25,11 @@ function App() {
       case 'Contact':
         return <ContactForm />;
       case 'Front':
-        return <Projects currentCategory={categories[0]}></Projects>
+        return <Applications currentCategory={categories[0]}></Applications>
       case 'Back':
-        return <Projects currentCategory={categories[1]}></Projects>
+        return <Applications currentCategory={categories[1]}></Applications>
       case 'Full':
-        return <Projects currentCategory={categories[2]}></Projects>
+        return <Applications currentCategory={categories[2]}></Applications>
       case 'Resume':
         return <Resume />;
       default:

@@ -7,14 +7,14 @@ const ApplicationList = ({ category }) => {
     {
       name: 'Run Buddy',
       category: 'front',
-      description: 'The front end of a running based fitness subscription funded site',
+      description: 'Front end sit of a running based company',
       gitHub: 'https://github.com/rachelf0/run-buddy',
       site:'https://rachelf0.github.io/run-buddy/',
     },
     {
       name: 'Taskinator',
       category: 'front',
-      description: 'A simple application for keeping track of tasks',
+      description: 'An app for keeping tasks organized',
       gitHub: 'https://github.com/rachelf0/taskinator',
       site:'https://rachelf0.github.io/taskinator/',
     },
@@ -28,49 +28,49 @@ const ApplicationList = ({ category }) => {
     {
       name: 'Work Day Scheduler',
       category: 'front',
-      description: 'An application for maping out your day',
+      description: 'An app for planning out your days',
       gitHub: 'https://github.com/rachelf0/super-disco',
       site:'https://rachelf0.github.io/super-disco/',
     },
     {
       name: 'Weather Dashboard',
       category: 'front',
-      description: 'A weather forecast application using the Open Weather Database',
+      description: 'A weather app using weather forecast information',
       gitHub: 'https://github.com/rachelf0/triple8',
       site:'https://rachelf0.github.io/triple8/',
     },
     {
       name: 'Readme Generator',
       category: 'back',
-      description: 'A Node.js application for generating a markdown readme page with the inquirer npm package',
+      description: 'A Node.js app for generating a markdown readme page',
       gitHub: 'https://github.com/rachelf0/generate-rm',
       site:'NA',
     },
     {
       name: 'Team Profile Generator',
       category: 'back',
-      description: 'A Node.js build application to generate an HTML page of team members with team roles and other pertinent data',
+      description: 'A Node.js build appn to generate an HTML page of team members with team roles and other data',
       gitHub: 'https://github.com/rachelf0/TeamProfile',
       site:'NA',
     },
     {
       name: 'Note Taker',
       category: 'back',
-      description: 'A note taking program I built the back end of using Node.js and Express.js',
+      description: 'A note taking program in which my role was to focus on the back end build',
       gitHub: 'https://github.com/rachelf0/write-pro',
       site:'https://cryptic-refuge-57218.herokuapp.com/notes',
     },
     {
       name: 'Employee Tracker',
       category: 'back',
-      description: 'A Node.js application using Inquirer to gather user input and Express.js to serve data, while performing CRUD operations on a MySQL Database to store employee information',
+      description: 'A Node.js app using Inquirer to gather user input and Express.js to serve data, while performing CRUD operations on a MySQL Database to store employee information',
       gitHub: 'https://github.com/rachelf0/jackinthebox',
       site:'NA',
     },
     {
       name: 'E-Commerce Back End',
       category: 'back',
-      description: 'A Node.js application that uses Express.js to serve data while using sequelize to perform CRUD operations on a MySQL database for an E-Commerce Site',
+      description: 'A Node.js app that uses Express.js to serve data while using sequelize to perform CRUD operations on a MySQL database for an E-Commerce Site',
       gitHub: 'https://github.com/rachelf0/ecommerce',
       site:'NA',
     },
@@ -85,8 +85,9 @@ const ApplicationList = ({ category }) => {
       name: 'Spontaneous Adventurer',
       category: 'front',
       description: 'A website for spontaneous travelers to plan last minute activities, check weather and buy tickets to local events',
-      gitHub: 'https://taylornyquist.github.io/spontaneous-adventurer/',
-      site:'https://github.com/taylornyquist/spontaneous-adventurer',
+      gitHub: 'https://github.com/taylornyquist/spontaneous-adventurer',
+      site:'https://taylornyquist.github.io/spontaneous-adventurer/',
+      
     },
     {
       name: 'Social Media API',
@@ -128,7 +129,7 @@ const ApplicationList = ({ category }) => {
       <div className="flex-row">
         {currentApplications.map((image, i) => (
           <img
-            src={require(`../../assets/img/small/${category}/${i}.jpg`)}
+            src={require(`../../assets/img/large/${category}/${i}.jpg`)}
             alt={image.name}
             className="img-thumbnail mx-1"
             onClick={() => toggleModal(image, i)}
