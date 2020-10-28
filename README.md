@@ -4,7 +4,7 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). Personal full stack development portfolio.
 
-**[Deployed Application](https://rachelf0.github.io/rachelf0-reactportfolio)**
+**[Deployed Application](https://rachelf0.github.io/reactportfolio/)**
   
 ## User Story
 
