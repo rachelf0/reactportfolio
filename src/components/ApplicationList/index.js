@@ -111,6 +111,13 @@ const ApplicationList = ({ category }) => {
       description: 'A MERN stack application built for those seeking to try and share exquisite cocktail recipes.',
       GitHub: 'https://github.com/adamkeyser45/thespeakeasy',
       site:'https://fierce-forest-64673.herokuapp.com/',
+    },
+    {
+      name: 'Uncode Your Career',
+      category: 'full',
+      description: 'A MERN single-page application built for recent boot camp grads looking for jobs.',
+      GitHub: 'https://github.com/cjacktwil/final-project',
+      site:'https://murmuring-everglades-03231.herokuapp.com/',
     }
   ]);
 
