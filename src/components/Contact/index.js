@@ -62,6 +62,9 @@ function ContactForm() {
                 )}
                 <button data-testid="button" type="submit">Submit</button>
             </form>
+            <p>Email: <span class="myemail">rachelfritz0@gmail.com</span></p>
+            <p><a href="https://github.com/rachelf0"> GitHub Profile </a></p>
+            <a href="https://www.linkedin.com/in/rachel-fritz-0/"> LinkedIn Profile </a>
         </section>
     );
 
